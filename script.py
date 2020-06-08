@@ -1,3 +1,4 @@
 import sys
 
-print("Hello " + sys.argv[1])
+with open(sys.argv[1]) as f:
+    print(f.readline())
