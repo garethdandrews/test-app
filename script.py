@@ -1,4 +1,8 @@
 import sys
 
-with open(sys.argv[1]) as f:
-    print(f.readline())
+f = open(sys.argv[1])
+
+for l in f:
+    if "the" in l:
+        print(l)
+        break
